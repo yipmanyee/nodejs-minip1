@@ -1,5 +1,8 @@
 const express = require ('express');
 const morgan = require ('morgan');
+const mongoose = require('mongoose');
+const session = require('express-session');
+const FileStore = require('session-file-store')(session); 
 
 const hostname = 'localhost';
 const port = 3000;
